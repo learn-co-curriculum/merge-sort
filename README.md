@@ -82,6 +82,28 @@ Do not worry about invalid inputs! Just ensure your method works for valid input
 
 ## 2. Implement the Main Function `merge_sort`/`mergeSort`
 
+The main function recursively divides the unsorted input array into pieces until those pieces are as small as possible. It then feeds those pieces to the `merge` helper method. It then combines the results from calling `merge` into one final sorted list that is returned.
+
+Let's take this step by step by breaking this process down into chunks we can test. Keep in mind that you'll be responsible for testing each step. Our tests will only check the final result of calling the main method.
+
+**1. Add the base case**
+
+We want to divide the input into its smallest possible subsets. What length or lengths might the smallest possible subset be? You can also ask yourself: "What might the smallest possible input be?"
+
+If you're feeling rusty on recursion: the base case, often an `if` statement, is responsible for stopping the recursive calls.
+
+Test your code. If it's working you'll get the following result:
+
+```
+Input []
+Output: []
+
+Input: [1]
+Output: [1]
+
+Input: [1, 2]
+Output: undefined or nil, or some other falsy value (default return value for the language you're using)
+```
 
 
 Use the language of your choosing. We've included starter files for some languages where you can pseudocode, explain your solution and code.

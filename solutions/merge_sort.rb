@@ -1,9 +1,21 @@
 def merge(arr1, arr2)
-  # type your code in here
+  result = []
+
+  while arr1.length > 0 && arr2.length > 0
+    result.push arr1.first < arr2.first ? arr1.shift : arr2.shift
+  end
+
+  result + arr1 + arr2
 end
 
 def merge_sort(arr)
-  # type your code in here
+  return arr if arr.length < 2
+
+  middle = arr.length / 2
+  left = merge_sort(arr[0...middle])
+  right = merge_sort(arr[middle..-1])
+
+  merge(left, right)
 end
 
 if __FILE__ == $PROGRAM_NAME
