@@ -8,6 +8,8 @@ Merge sort is an efficient sorting algorithm that uses a divide and conquer appr
 
 ## How Does Merge Sort Work?
 
+![Merge Sort image](./merge_sort.png)
+
 Let's say we have an Array consisting of four elements. First, we divide that into two Arrays of two elements each. Since this is not the smallest possible division, we then divide those into four Arrays total consisting of one element each:
 
 ```
@@ -27,6 +29,8 @@ Sort [3, 4] with [1, 2] => [1, 2, 3, 4]
 It is common to declare two functions (or more) when implementing a merge sort. The main function is recursive: it divides the list and merges the sorted pieces. It calls a helper function, which might be recursive or iterative. The helper function merges the pieces of the list into a sorted list, and returns it.
 
 Use the language of your choosing. We've included starter files for some languages where you can pseudocode, explain your solution and code.
+
+You should also think of what the time complexity is for this algorithm. This is a tough one because you have to think about both the recursive process and the iterative process to come up with an answer for Big O. You might want to search the web for this one. Check out this [StackExchange discussion](https://softwareengineering.stackexchange.com/questions/297160/why-is-mergesort-olog-n).
 
 ## 1. Implement the Helper Function `merge`
 
