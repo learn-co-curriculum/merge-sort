@@ -154,7 +154,7 @@ Once that's working, be sure to remove any print or return statements you used t
 
 Earlier, we said that we need to keep dividing the input until it is divided into the smallest possible pieces. Another way of thinking of this is that we need to keep dividing the input until we hit the base case we declared earlier.
 
-Right now, we are only dividing the list once into a `left` side and a `right` side once. How can we keep dividing the list until it's as small as possible? What do we need to do?
+Right now, we are only dividing the list into a `left` side and a `right` side once. How can we keep dividing the list until it's as small as possible? What do we need to do?
 
 You can test your code by printing the values stored in left and right. If the print statement/s are the very last line/s in your code, you should see the following print out:
 
