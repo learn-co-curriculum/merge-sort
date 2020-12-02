@@ -184,7 +184,9 @@ merge_sort([-10, 5, 100, -100])
 
 **6. Take some time to think**
 
-Take some time to understand what's happening as the algorithm recurses. What does the stack look like? What's in each frame? Can you plot it out on paper for small inputs? Try plotting it out when the input Array has 2 elements, 3 elements, or 4 elements. You can also watch your solution in action using this [tool](http://pythontutor.com/visualize.html#mode=edit). Don't forget to choose the right language, and then call your function with an argument!
+Take some time to understand what's happening as the algorithm recurses. What does the stack look like? What's in each frame? Can you plot it out on paper for small inputs? Try plotting it out when the input Array has 2 elements, 3 elements, or 4 elements. You can also watch your solution in action using this [tool](http://pythontutor.com/visualize.html#mode=edit): don't forget to choose the right language, and then call your function with an argument!
+
+Also think about the problem solving techniques you used. How can you use what you've learned to solve other problems? What did you learn about recursion/recursive programming?
 
 ## Before you start coding:
 
