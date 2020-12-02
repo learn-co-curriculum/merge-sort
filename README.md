@@ -24,7 +24,9 @@ Sort [2] with [1] => [1, 2]
 Sort [3, 4] with [1, 2] => [1, 2, 3, 4]
 ```
 
-It is common to declare two functions (or more) when implementing a merge sort. The main function is recursive: it divides the list and merges the sorted pieces. It calls a helper function, which might be recursive or iterative. The helper function merges the pieces of the list into sorted lists, and returns them.
+It is common to declare two functions (or more) when implementing a merge sort. The main function is recursive: it divides the list and merges the sorted pieces. It calls a helper function, which might be recursive or iterative. The helper function merges the pieces of the list into a sorted list, and returns it.
+
+Use the language of your choosing. We've included starter files for some languages where you can pseudocode, explain your solution and code.
 
 ## 1. Implement the Helper Function `merge`
 
@@ -88,7 +90,7 @@ Let's take this step by step by breaking this process down into chunks we can te
 
 **1. Add the base case**
 
-We want to divide the input into its smallest possible subsets. What length or lengths might the smallest possible subset be? You can also ask yourself: "What might the smallest possible input be?"
+We want to divide the input into its smallest possible subsets. What length or lengths might the smallest possible subset be? You can also ask yourself: "What might the smallest possible input be?" or "When do I want to stop dividing the Array and return it?"
 
 If you're feeling rusty on recursion: the base case, often an `if` statement, is responsible for stopping the recursive calls.
 
@@ -102,11 +104,79 @@ Input: [1]
 Output: [1]
 
 Input: [1, 2]
-Output: undefined or nil, or some other falsy value (default return value for the language you're using)
+Output: undefined or nil (i.e. default return value for the language you're using)
 ```
 
+**2. Find the middle**
 
-Use the language of your choosing. We've included starter files for some languages where you can pseudocode, explain your solution and code.
+Store the middle index of the input Array in a variable. Print or return it to check that it's correct. Make sure it's an integer!
+
+```
+Input: []
+Output: [] // never reaches the middle calculation
+
+Input: [1]
+Output: [1] // never reaches the middle calculation
+
+Input: [1, 2]
+Output: 1
+
+Input: [1, 2, 3]
+Output: 1
+```
+
+Once that's working, be sure to remove any print or return statements you used to test your code.
+
+**3. Divide the Array**
+
+Divide the Array into two parts: one part stores all the values up to the middle, and the other part stores all the values from the middle onwards. These are often called `left` and `right`. 
+
+Test your work by printing or returning the two parts. Make sure all of the values from the input are present.
+
+```
+Input: [1, 2, 3, 4]
+Left: [1, 2] 
+Right: [3, 4]
+
+Input: [1, 2, 3]
+Left: [1]
+Right: [2, 3]
+// Left [1, 2] and Right [3] is also valid
+```
+
+Once that's working, be sure to remove any print or return statements you used to test your code.
+
+**4. Divide more!**
+
+Earlier, we said that we need to keep dividing the input until it is divided into the smallest possible pieces. Another way of thinking of this is that we need to keep dividing the input until we hit the base case we declared earlier.
+
+Right now, we are only dividing the list once into a `left` side and a `right` side once. How can we keep dividing the list until it's as small as possible? What do we need to do?
+
+You can test your code by printing the values stored in left and right. If the print statement/s are the very last line/s in your code, you should see the following print out:
+
+```
+merge_sort([1, 2, 3, 4])
+=> [1]
+=> [2]
+=> [3]
+=> [4]
+```
+
+Once that's working, be sure to remove any print or return statements you used to test your code.
+
+**5. Sort and merge**
+
+We still haven't called our helper method `merge`, and it's getting lonely. If you recall from earlier in this README, `merge` takes two sorted lists and sorts and merges them into one list. What might we do with this method? What might we provide to it as arguments?
+
+At the end of this step, you should be done!
+
+```
+merge_sort([1, 2, 3])
+=> [1, 2, 3]
+
+merge_sort([-10, 5, 100, -100])
+=> [-100, -10, 5, 100]
+```
 
 ## Before you start coding:
 
