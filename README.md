@@ -1,4 +1,4 @@
-# Day 3: Merge Sort
+# Days 3-5: Merge Sort
 
 **Fork and then clone me!**
 
