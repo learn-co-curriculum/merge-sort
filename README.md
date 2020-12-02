@@ -90,7 +90,7 @@ Let's take this step by step by breaking this process down into chunks we can te
 
 **1. Add the base case**
 
-We want to divide the input into its smallest possible subsets. What length or lengths might the smallest possible subset be? You can also ask yourself: "What might the smallest possible input be?" or "When do I want to stop dividing the Array and return it?"
+We want to divide the input into its smallest possible subsets. What length or lengths might the smallest possible subset be? You can also ask yourself: "What might the smallest possible input be?" or "When do I want to stop dividing the Array and return it?" or "What inputs would already be considered sorted no matter what their contents are?"
 
 If you're feeling rusty on recursion: the base case, often an `if` statement, is responsible for stopping the recursive calls.
 
