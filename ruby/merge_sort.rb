@@ -8,17 +8,17 @@ end
 
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: [1, 2]"
-  puts merge_sort([2, 1])
+  puts "=>", merge_sort([2, 1])
 
   puts
 
   puts "Expecting: [1, 2, 3]"
-  puts merge_sort([1, 2, 3])
+  puts "=>", merge_sort([1, 2, 3])
 
   puts
 
   puts "Expecting: [-10, 0, 2, 2, 5, 10, 20]"
-  puts merge_sort([10, -10, 0, 2, 20, 5, 2])
+  puts "=>", merge_sort([10, -10, 0, 2, 20, 5, 2])
 
   # Don't forget to add your own!
 end
