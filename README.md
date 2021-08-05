@@ -4,11 +4,11 @@
 
 Merge sort is an efficient sorting algorithm that uses a divide and conquer approach to sorting elements. In other words, it sorts small subsets of the list, merges those subsets, sorts those, and carries on until the whole list has been sorted. It is commonly implemented as a recursive algorithm.
 
-![Merge Sort animation](./merge_sort.gif)
+![Merge Sort animation](https://curriculum-content.s3.amazonaws.com/data-structures-and-algorithms/merge-sort/merge_sort.gif)
 
 ## How Does Merge Sort Work?
 
-![Merge Sort image](./merge_sort.png)
+![Merge Sort image](https://curriculum-content.s3.amazonaws.com/data-structures-and-algorithms/merge-sort/merge_sort.png)
 
 Let's say we have an Array consisting of four elements. First, we divide that into two Arrays of two elements each. Since this is not the smallest possible division, we then divide those into four Arrays total consisting of one element each:
 
@@ -37,6 +37,7 @@ You should also think of what the time complexity is for this algorithm. This is
 `merge` takes two arguments, both of which are Arrays. **Each of those Arrays will already be sorted.** It then merges those Arrays into one sorted Array and returns it. It merges and sorts them by comparing the first element of each Array. The smallest one is removed and pushed onto a new result Array. It does this until one of the Arrays is empty, and then pushes any remaining values onto the result.
 
 Here is an example of what happens during this process:
+
 ```
 input 1 = [1, 2]
 input 2 = [0, 6]
@@ -133,13 +134,13 @@ Once that's working, be sure to remove any print or return statements you used t
 
 **3. Divide the Array**
 
-Divide the Array into two parts: one part stores all the values up to the middle, and the other part stores all the values from the middle onwards. These are often called `left` and `right`. 
+Divide the Array into two parts: one part stores all the values up to the middle, and the other part stores all the values from the middle onwards. These are often called `left` and `right`.
 
 Test your work by printing or returning the two parts. Make sure all of the values from the input are present.
 
 ```
 Input: [1, 2, 3, 4]
-Left: [1, 2] 
+Left: [1, 2]
 Right: [3, 4]
 
 Input: [1, 2, 3]
