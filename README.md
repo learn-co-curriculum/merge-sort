@@ -2,8 +2,8 @@
 
 ## Learning Goals
 
-- Define the bubble sort algorithm and its advantages/disadvantages
-- Implement the bubble sort algorithm
+- Define the merge sort algorithm and its advantages/disadvantages
+- Implement the merge sort algorithm
 
 ## Introduction
 
